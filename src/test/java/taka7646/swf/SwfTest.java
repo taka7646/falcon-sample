@@ -12,6 +12,7 @@ public class SwfTest {
 			SwfFile swfFile = new SwfFile("src/test/resources/ethnyan-blue-mask.swf");
 			swfFile.load();
 			swfFile.dumpTags();
+			swfFile.exportImages();
 		}catch(Throwable e){
 			e.printStackTrace();
 			fail();
